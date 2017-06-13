@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'calculator';
+    src: url('../font/Calculator.ttf');
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+.outline {
+    width: 300px;
+    margin: 100px auto 0 auto;
+    border: 3px solid #262626;
+    border-radius: 10px 10px 40px 40px;
+    background-color: #cccccc;
+    box-shadow: 4px 4px 5px #888888;
+}
+
+.inline {
+    padding: 5px;
+}
+
+.button {
+    box-shadow: 2px 2px 5px #888888;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #262626;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    color: white;
+    font-size: 1.5em;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row /* works with row or column */
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button:active {
+    border: 1px solid black;
+}
+
+.solar {
+    border: 2px solid black;
+    background-color: #400000;
+    height: 40px;
+}
+
+
+.totalInput {
+    height: 60px;
+    border: 1px solid green;
+    background-color: #ccffe6;
+    font-family: calculator;
+    font-size: 3em;
+    text-align: right;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+    margin: 10px 0;
+}
+
+.solar-outline {
+    margin: 10px 0;
+    grid-gap: 0;
+}
+
+[class*='col-'] {
+  display: grid;
+}
+
+.col-5 {
+    grid-column: span 5;
+}
+
+.col-4 {
+    grid-column: span 4;
+}
+
+.col-3 {
+    grid-column: span 3;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+.col-1 {
+    grid-column: span 1;
+}
